@@ -10,12 +10,12 @@ import SwiftUI
 struct ContentView: View {
     
     // MARK: Stored properties
-    @State var number: Double = 10.0
+    @State var number: Double = 45.0
     
     // MARK: Computed properties
     var body: some View {
         VStack {
-            Text("75.0")
+            Text("\(number)")
                 .font(.largeTitle)
                 .bold()
         }
