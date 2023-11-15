@@ -10,7 +10,7 @@ import SwiftUI
 struct ContentView: View {
     
     // MARK: Stored properties
-    @State var number: Double = 45.0
+    @State var number: Double = 50.0
     
     // MARK: Computed properties
     var body: some View {
@@ -18,6 +18,8 @@ struct ContentView: View {
             Text("\(number)")
                 .font(.largeTitle)
                 .bold()
+            
+            Slider(value: $number, in: 0...100)
         }
         .padding()
     }
